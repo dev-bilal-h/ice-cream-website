@@ -8,7 +8,7 @@ const HeroSection: React.FC = () => {
       <div className="container mx-auto flex flex-col md:flex-row-reverse items-center px-6 md:px-12 lg:px-24 space-y-6 md:space-y-0">
         
         {/* Image Section: Properly Positioned */}
-        <div className="w-full md:w-1/2 flex justify-center items-center mt-6 md:mt-0">
+        <div className="w-full md:w-1/2 flex justify-center items-center mt-8 md:mt-0">
           <div className="relative w-3/4 sm:w-2/3 md:w-3/5 scale-110">
             <Image
               src={HeroImage}
