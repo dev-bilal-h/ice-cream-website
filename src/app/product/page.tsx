@@ -88,7 +88,7 @@ const ProductCard = () => {
             className="bg-white border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200"
           >
             {/* Product Image */}
-            <div className="relative w-64 h-64 bg-pink-100 rounded-lg mx-auto mt-4 flex items-center justify-center">
+            <div className="relative w-full h-64 bg-pink-100 rounded-lg mx-auto mt-4 flex items-center justify-center">
               <Image
                 src={product.image}
                 alt={product.name}
@@ -128,7 +128,7 @@ const ProductCard = () => {
             className="bg-white border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200"
           >
             {/* Product Image */}
-            <div className="relative w-64 h-64 bg-red-100 rounded-lg mx-auto mt-4 flex items-center justify-center">
+            <div className="relative w-full h-64 bg-red-100 rounded-lg mx-auto mt-4 flex items-center justify-center">
               <Image
                 src={product.image}
                 alt={product.name}
