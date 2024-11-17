@@ -33,14 +33,7 @@ const HeroSection: React.FC = () => {
         {/* Right Section: Images */}
         <div className="w-full md:w-1/2 relative flex justify-center items-center">
           {/* Milk Image in the background */}
-          <div className="absolute w-[130%] md:w-[110%] -top-32 -right-24">
-            <Image
-              src={MilkHero}
-              alt="Milk Splash"
-              className="object-contain"
-              priority
-            />
-          </div>
+ 
           {/* Ice Cream Image */}
           <div className="relative z-10 w-3/4 sm:w-2/3 md:w-3/5 translate-x-32 scale-125 ">
             <Image
