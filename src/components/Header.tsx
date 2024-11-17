@@ -9,7 +9,7 @@ import {
 
 export default function Header() {
     return (
-        <header className="fixed top-0 left-0 w-full px-6 py-4 bg-transparent flex items-center justify-between z-50">
+        <header className="fixed top-0 left-0 w-full px-6 py-4 bg-white flex items-center justify-between z-50">
             
             {/* LOGO CONTENT */}
             <div className="flex items-center">
