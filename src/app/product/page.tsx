@@ -75,7 +75,7 @@ const ProductCard = () => {
   return (
     <div className="py-10 px-4 text-center bg-gray-50">
       {/* Header Section */}
-      <h1 className="text-3xl font-bold">
+      <h1 className="text-3xl font-bold mt-8 md:mt-8">
         Our <span className="text-pink-500">Classic</span> Favorites
       </h1>
       <p className="text-gray-600 mt-2">Check out our top products that our customers love.</p>
