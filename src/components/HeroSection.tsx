@@ -1,6 +1,5 @@
 import React from 'react';
 import HeroImage from "@/assets/HeroImage.png";
-import MilkHero from "@/assets/MilkHero.png";
 import Image from 'next/image';
 
 const HeroSection: React.FC = () => {
