@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection"
-import ProductCard from "@/app/product/page"
+import ProductCard from "@/app/flavors/page"
 import About from "@/app/about/page"
+import Contact from "@/app/contact/page"
 
 export default function Home(){
   return(
@@ -8,6 +9,7 @@ export default function Home(){
       <HeroSection/>
       <ProductCard/>
       <About/>
+      <Contact/>
     </div>
   )
 }

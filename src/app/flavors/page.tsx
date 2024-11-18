@@ -74,7 +74,6 @@ const ProductCard = () => {
 
   return (
     <div className="py-10 px-4 text-center bg-gray-50">
-      {/* Header Section */}
       <h1 className="text-3xl font-bold mt-8 md:mt-8">
         Our <span className="text-pink-500">Classic</span> Favorites
       </h1>
@@ -103,7 +102,7 @@ const ProductCard = () => {
               <p className="text-gray-500 text-sm mt-1">{product.description}</p>
               <p className="text-pink-500 font-bold text-xl mt-3">{product.price}</p>
 
-              {/* Add to Cart Button */}
+              {/* Cart Button */}
               <button className="w-full mt-4 bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600 transition">
                 Add to Cart
               </button>
