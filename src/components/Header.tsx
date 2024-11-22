@@ -45,7 +45,7 @@ export default function Header() {
                         </li>
                         <li>
                             <SheetClose asChild>
-                                <Link href="/product" className="hover:text-rose-500">Product</Link>
+                                <Link href="/flavors" className="hover:text-rose-500">Flavors</Link>
                             </SheetClose>
                         </li>
                         <li>
