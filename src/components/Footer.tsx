@@ -1,38 +1,97 @@
-import { FaInstagram, FaFacebookF, FaTwitter } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-purple-500 text-white py-2 px-4 md:px-20 lg:px-40">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        {/* Left Section: Logo & Description */}
-        <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
-          <h2 className="text-black text-xl sm:text-2xl font-bold font-serif">
-            Cloudy&nbsp;<span className="text-rose-400 text-xl sm:text-2xl font-bold font-serif">Cones</span>
-          </h2>
-          <p className="text-center md:text-left mt-2">
-          Enjoy the finest ice cream with delightful flavors made just for you! Treat yourself to a scoop today.
-          </p>
+    <footer className="bg-pink-200 text-black py-10">
+      <div className="container mx-auto px-4 lg:px-20">
+        {/* Heading */}
+        <h2 className="text-left text-2xl font-bold mb-8 font-serif">
+          <span className="text-black">Cloudy</span>{" "}
+          <span className="text-pink-500">Cones</span>
+        </h2>
+
+        {/* Top Section: Links */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+          <div>
+            <h3 className="font-bold text-pink-600 mb-3">Menu</h3>
+            <ul>
+              <li className="mb-2 hover:text-pink-600 cursor-pointer">Flavors</li>
+              <li className="mb-2 hover:text-pink-600  cursor-pointer">Specials</li>
+              <li className="mb-2 hover:text-pink-600  cursor-pointer">Custom Cones</li>
+              <li className="hover:text-pink-600  cursor-pointer">Gift Cards</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-bold text-pink-600 mb-3">About Us</h3>
+            <ul>
+              <li className="mb-2 hover:text-pink-600  cursor-pointer">Our Story</li>
+              <li className="mb-2 hover:text-pink-600  cursor-pointer">Locations</li>
+              <li className="mb-2 hover:text-pink-600  cursor-pointer">Careers</li>
+              <li className="hover:text-pink-600  cursor-pointer">Sustainability</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-bold text-pink-600 mb-3">Customer Support</h3>
+            <ul>
+              <li className="mb-2 hover:text-pink-600  cursor-pointer">Contact Us</li>
+              <li className="mb-2 hover:text-pink-600  cursor-pointer">FAQs</li>
+              <li className="mb-2 hover:text-pink-600  cursor-pointer">Order Tracking</li>
+              <li className="hover:text-pink-600  cursor-pointer">Feedback</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-bold text-pink-600 mb-3">Offers & Deals</h3>
+            <ul>
+              <li className="mb-2 hover:text-pink-600  cursor-pointer">Seasonal Offers</li>
+              <li className="mb-2 hover:text-pink-600  cursor-pointer">Membership</li>
+              <li className="mb-2 hover:text-pink-600  cursor-pointer">Discounts</li>
+              <li className="hover:text-pink-600  cursor-pointer">Partner Programs</li>
+            </ul>
+          </div>
         </div>
 
-        {/* Right Section: Social Media Icons */}
-        <div className="flex gap-6 mt-4 md:mt-0">
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-pink-500">
-            <FaInstagram size={24} />
-          </a>
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-pink-500">
+        {/* Middle Section: Social Media Icons */}
+        <div className="flex justify-center gap-6 mt-8">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-500"
+          >
             <FaFacebookF size={24} />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-pink-500">
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-400"
+          >
             <FaTwitter size={24} />
           </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-pink-500"
+          >
+            <FaInstagram size={24} />
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-700"
+          >
+            <FaLinkedin size={24} />
+          </a>
         </div>
-      </div>
 
-      {/* Bottom Section: Copyright */}
-      <div className="border-t mt-6 pt-4 text-center">
-        <p className="text-sm">
+        {/* Bottom Section: Copyright */}
+        <div className="text-center text-sm mt-8 border-t border-gray-700 pt-4">
+          <p>
           &copy; {new Date().getFullYear()} Cloudy Cones All rights reserved.
-        </p>
+          </p>
+        </div>
       </div>
     </footer>
   );
